@@ -641,9 +641,9 @@ class GoogleDriveHelper:
 
             for content in self.telegraph_content :
                 self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                        title = '💞 𝐒𝐩𝐚𝐫𝐤𝐱𝐂𝐥𝐨𝐮𝐝-𝐆𝐝𝐫𝐢𝐯𝐞-𝐌𝐢𝐫𝐫𝐨𝐫𝐛𝐨𝐭 𝐒𝐞𝐚𝐫𝐜𝐡',
-                                                        author_name='💓 𝐒𝐩𝐚𝐫𝐤𝐱𝐂𝐥𝐨𝐮𝐝-𝐆𝐝𝐫𝐢𝐯𝐞-𝐌𝐢𝐫𝐫𝐨𝐫𝐛𝐨𝐭',
-                                                        author_url='https://github.com/Spark-X-Cloud/SparkXcloud-Gdrive-MirrorBot',
+                                                        title = SXTCO-MIRROR',
+                                                        author_name='SXTCP-MIRROR',
+                                                        author_url='tg://settings',
                                                         html_content=content
                                                         )['path'])
 
@@ -664,7 +664,7 @@ class GoogleDriveHelper:
         try:
             file_id = self.getIdFromUrl(link)
         except (KeyError,IndexError):
-            msg = "📛 𝐆𝐨𝐨𝐠𝐥𝐞 𝐃𝐫𝐢𝐯𝐞 𝐈𝐃 𝐜𝐨𝐮𝐥𝐝 𝐧𝐨𝐭 𝐛𝐞 𝐟𝐨𝐮𝐧𝐝 𝐢𝐧 𝐭𝐡𝐞 𝐩𝐫𝐨𝐯𝐢𝐝𝐞𝐝 𝐥𝐢𝐧𝐤"
+            msg = " Cek Link nya Goblok"
             return msg
         msg = ""
         LOGGER.info(f"File ID: {file_id}")
@@ -727,7 +727,7 @@ class GoogleDriveHelper:
         try:
             file_id = self.getIdFromUrl(link)
         except (KeyError,IndexError):
-            msg = "📛 𝐆𝐨𝐨𝐠𝐥𝐞 𝐃𝐫𝐢𝐯𝐞 𝐈𝐃 𝐜𝐨𝐮𝐥𝐝 𝐧𝐨𝐭 𝐛𝐞 𝐟𝐨𝐮𝐧𝐝 𝐢𝐧 𝐭𝐡𝐞 𝐩𝐫𝐨𝐯𝐢𝐝𝐞𝐝 𝐥𝐢𝐧𝐤"
+            msg = "Cek link baru clone ya goblok "
             return msg, "", "", ""
         LOGGER.info(f"File ID: {file_id}")
         try:
